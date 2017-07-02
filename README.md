@@ -40,13 +40,13 @@ Assuming you'd like to use the `notebooks` directory from this repo, run:
 
 ```
 $ cd ucu-nlp-workshop
-$ python startenv.py notebooks
+$ python startenv.py /path/you/cloned/the/repo/to/notebooks
 ```
 
 To mount some other code/data directory instead of `./notebooks`:
 
 ```
-$ python startenv.py /path/on/my/local/machine
+$ python startenv.py /path/with/some/other/data
 ```
 
 For help and additional options, run:
