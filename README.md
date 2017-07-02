@@ -35,7 +35,7 @@ $ docker pull yuriyguts/ucu-nlp-workshop
 
 **3. Run the environment.**
 
-The environment will mount your local data folder inside the container filesystem.
+The environment will mount your local data folder on the container filesystem (`/mnt/data`).
 Assuming you'd like to use the `notebooks` directory from this repo, run:
 
 ```
@@ -48,6 +48,8 @@ To mount some other code/data directory instead of `./notebooks`:
 ```
 $ python startenv.py /path/with/some/other/data
 ```
+
+Verify that the directory was mounted correctly, and `/mnt/data` on the container is **not empty**.
 
 For help and additional options, run:
 
