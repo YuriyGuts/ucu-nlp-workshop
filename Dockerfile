@@ -2,7 +2,8 @@ FROM phusion/baseimage:0.9.22
 MAINTAINER Yuriy Guts <yuriy.guts@gmail.com>
 
 ENV TERM=xterm \
-    EDITOR=nano
+    EDITOR=nano \
+    PATH=/opt/miniconda/bin:$PATH
 
 ADD ./docker-support /opt/docker
 
