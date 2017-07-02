@@ -65,7 +65,7 @@ def main():
     args = parse_command_line_args(sys.argv[1:])
     docker_cmdline = 'docker run -it --rm ' \
                      '-p {ssh_host_port}:22 -p {jupyter_host_port}:8888 ' \
-                     '-v {data_dir}:/mnt/data ' \
+                     '-v "{data_dir}":/mnt/data ' \
                      '{docker_args} ' \
                      'yuriyguts/ucu-nlp-workshop ' \
                      '/sbin/my_init -- jupyter notebook --allow-root'
